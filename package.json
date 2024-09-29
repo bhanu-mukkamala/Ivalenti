@@ -1,0 +1,28 @@
+{
+  "name": "ivalenti",
+  "version": "1.0.0",
+  "description": "a food delivery application",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhanu-mukkamala/Ivalenti.git"
+  },
+  "keywords": [
+    "food",
+    "delivery",
+    "ivalenti"
+  ],
+  "author": "Sree Bhanu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhanu-mukkamala/Ivalenti/issues"
+  },
+  "homepage": "https://github.com/bhanu-mukkamala/Ivalenti#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
