@@ -1,28 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-import logo from './images/logo.png';
-
-const Header =() =>(
-  <div className ="header">
-  <div className ="logo-container">
-    <img className="logo1" src={logo} alt="logo"></img>
-  </div> 
-  <div className="nav-items">
-    <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Contact Us</li>
-      <li>Cart</li>
-    </ul>
-  </div>
-  </div>
-);
-// inorder to make the code modular and since there will be a lot of restaurent cards we are creating a
-// seperate component because the code inside will be repeating a lot 
-
-//from the backend we get the data in the form of JSON(JAvascript object notation)
-
 const resList ={
    restaurants : [
   {
@@ -107,49 +82,4 @@ const resList ={
   }
 ]
 }
-                  
-
-//here the prop is converted to an JS object and is sent as an argument to the RestaurentCard component
-//here props is an argument that is used ot access the resData
-const RestaurantCard =(props) => {
-  //whatever key you pass in the below rescard, the same will be here as well
- //
-  const {resData} = props;
-  const{name,image,cuisines,avgRating,costForTwo
-    
-  } = resData;
-  return(
-
-  <div className="res-card" >
-    <img className="res-logo" src={image}></img>
-   <h3>{name}</h3> 
-      <h4>{cuisines.join(',')}</h4> 
-      <h4>{avgRating}</h4> 
-      <h4>{costForTwo.replace('₹', '')}</h4> 
-  </div>
-  
-  )
-};
-
-//sending the data from the server as a prop
-const Body = () =>(
-  <div className="body">
-    <div className="search">Search</div>
-    <div className="res-container">
-     {
-      resList.restaurants.map((restaurant) => {
-        return <RestaurantCard key={restaurant.id} resData={restaurant}/>
-      })
-     }
-    </div>
-  </div>
-);
-
-const AppLayout = () =>(
-  <div className="app">
-    <Header/>
-    <Body/>
-  </div>
-);
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout/>);
+export default resList;
