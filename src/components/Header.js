@@ -1,5 +1,5 @@
 
-import logo from "../utils/images";
+import logo from "../utils/images/logo.png";
 
 const Header =() =>(
   <div className ="header">

@@ -1,85 +1,140 @@
-const resList ={
-   restaurants : [
-  {
-    id: 1,
-    name: "Pizza Hut",
-    image: "https://example.com/pizza-hut.jpg",
-    cuisines: ["Pizza", "Italian"],
-    avgRating: 4.5,
-    costForTwo: "₹500"
-  },
-  {
-    id: 2,
-    name: "KFC",
-    image: "https://example.com/kfc.jpg",
-    cuisines: ["Fast Food", "Chicken"],
-    avgRating: 4.2,
-    costForTwo: "₹350"
-  },
-  {
-    id: 3,
-    name: "Subway",
-    image: "https://example.com/subway.jpg",
-    cuisines: ["Sandwiches", "Vegetarian"],
-    avgRating: 4.0,
-    costForTwo: "₹300"
-  },
-  {
-    id: 4,
-    name: "McDonald's",
-    image: "https://example.com/mcdonalds.jpg",
-    cuisines: ["Fast Food", "Burgers"],
-    avgRating: 4.3,
-    costForTwo: "₹320"
-  },
-  {
-    id: 5,
-    name: "Domino's Pizza",
-    image: "https://example.com/dominos.jpg",
-    cuisines: ["Pizza", "Italian"],
-    avgRating: 4.4,
-    costForTwo: "₹480"
-  },
-  {
-    id: 6,
-    name: "Burger King",
-    image: "https://example.com/burger-king.jpg",
-    cuisines: ["Fast Food", "Burgers"],
-    avgRating: 4.1,
-    costForTwo: "₹380"
-  },
-  {
-    id: 7,
-    name: "Cafe Coffee Day",
-    image: "https://example.com/ccd.jpg",
-    cuisines: ["Cafe", "Beverages", "Desserts"],
-    avgRating: 4.2,
-    costForTwo: "₹250"
-  },
-  {
-    id: 8,
-    name: "Barbeque Nation",
-    image: "https://example.com/barbeque-nation.jpg",
-    cuisines: ["North Indian", "South Indian", "Chinese"],
-    avgRating: 4.7,
-    costForTwo: "₹1200"
-  },
-  {
-    id: 9,
-    name: "Sagar Ratna",
-    image: "https://example.com/sagar-ratna.jpg",
-    cuisines: ["South Indian", "Vegetarian"],
-    avgRating: 4.6,
-    costForTwo: "₹400"
-  },
-  {
-    id: 10,
-    name: "Biryani Studio",
-    image: "https://example.com/biryani-studio.jpg",
-    cuisines: ["Biryani", "North Indian"],
-    avgRating: 4.3,
-    costForTwo: "₹550"
-  }
-]
-}
+const resList = [
+{
+data: {
+id: "255655",
+name: "Cake & Cream",
+cloudinaryImageId: "ac57cc371e73f96f812613f58457aca3",
+areaName: "Jairaj Nagar",
+costForTwo: "₹200 for two",
+cuisines: ["Bakery", "Hot-dog", "pastery", "Cake", "Thick- shake"],
+avgRating: 4.3,
+veg: true,
+parentId: "54670",
+avgRatingString: "4",
+totalRatingsString: "20+",
+},
+},
+{
+data: {
+id: "350363",
+name: "Haldiram's Sweets and Namkeen",
+cloudinaryImageId: "25c3a7d394d6c5556b134385f7d665b0",
+avgRating: 4.6,
+veg: true,
+cuisines: [
+"North Indian",
+"South Indian",
+"Chinese",
+"Pizzas",
+"Fast Food",
+],
+parentId: "391465",
+avgRatingString: "4.6",
+totalRatingsString: "100+",
+},
+},
+{
+data: {
+id: "154891",
+name: "Rasraj Restaurant",
+cloudinaryImageId: "egbr63ulc8h1zgliivd8",
+locality: "Civil Line",
+areaName: "Civil Lines",
+costForTwo: "₹250 for two",
+cuisines: [
+"North Indian",
+"South Indian",
+"Street Food",
+"Chinese",
+"Pizzas",
+"Fast Food",
+],
+avgRating: 4.2,
+},
+},
+{
+data: {
+id: "745961",
+name: "Balaji Restaurant",
+cloudinaryImageId: "b8672fe52944c3599ea324d99d608300",
+locality: "Sai Rubber Stamp",
+areaName: "Jairaj Nagar",
+costForTwo: "₹149 for two",
+cuisines: ["South Indian", "North Indian"],
+avgRating: 4.8,
+veg: true,
+},
+},
+{
+data: {
+id: "798745",
+name: "Friends Restaurant",
+cloudinaryImageId: "b14cd9fc40129fcfb97aa7e621719d07",
+locality: "Gayatri Nagar",
+areaName: "Jairaj Nagar",
+costForTwo: "₹150 for two",
+cuisines: ["North Indian", "Chinese", "Biryani", "Tandoor", "Kebabs"],
+avgRating: 4.2,
+parentId: "84308",
+},
+},
+{
+data: {
+id: "314737",
+name: "RASOI the KITCHEN",
+cloudinaryImageId: "yjymo9nhyn7rhvafsrd3",
+locality: "Sriram Chowk",
+areaName: "Bazar Ward",
+costForTwo: "₹200 for two",
+cuisines: ["North Indian", "Maharashtrian", "Chinese",
+"Thalis"],
+avgRating: 3.9,
+parentId: "167341",
+},
+},
+{
+data: {
+id: "201454",
+name: "Morsels restaurants",
+cloudinaryImageId: "aafe71251ef5328784652dc838cd91f3",
+locality: "Bazar Ward",
+areaName: "Chandrapur Locality",
+costForTwo: "₹300 for two",
+cuisines: ["North Indian", "South Indian"],
+avgRating: 3.2,
+veg: true,
+parentId: "139266",
+avgRatingString: "4.2",
+},
+},
+{
+data: {
+id: "266124",
+name: "Trimurti Restaurant",
+cloudinaryImageId: "8135c0066b06e2925c66930be4e9ffb5",
+locality: "Bazar Ward",
+areaName: "Chandrapur Locality",
+costForTwo: "₹150 for two",
+cuisines: ["Desserts"],
+avgRating: 3.9,
+veg: true,
+parentId: "217751",
+avgRatingString: "4.4",
+},
+},
+{
+data: {
+id: "509254",
+name: "Saha Restaurant",
+cloudinaryImageId: "z1ez4uc9idul2uj2v87g",
+areaName: "Jairaj Nagar",
+costForTwo: "₹300 for two",
+cuisines: ["North Indian", "Biryani", "Thalis", "Beverages"],
+avgRating: 3.7,
+parentId: "174585",
+avgRatingString: "3.7",
+},
+},
+];
+
 export default resList;
