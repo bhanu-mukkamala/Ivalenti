@@ -2,9 +2,9 @@
 const RestaurantCard =(props) => {
   //whatever key you pass in the below rescard, the same will be here as well
   const {resData} = props;
-  const{id,name,cuisines,avgRating,costForTwo,cloudinaryImageId
+  const{name,cuisines,avgRating,costForTwo,cloudinaryImageId
     
-  } = resData.data;
+  } = resData?.info || {};
   return(
 
   <div className="res-card" >
