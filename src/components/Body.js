@@ -36,9 +36,9 @@ const Body = () =>{
       </div>
       <button className="filter-btn" onClick={()=>{
         const filteredList=listOfRestaurants.filter(
-        (res) => res.info.avgRating > 4.2
+        (res) => res.info.avgRating > 4.5
         )
-        setlistOfRestaurants(filteredList);
+        setfilteredListOfRestaurants(filteredList);
       }}>Top Rated Restaurants</button>
     </div>
     <div className="res-container">
